@@ -17,7 +17,7 @@ function intentar() {
     const ROW = document.createElement('div');
     const INTENTO = leerIntento();
     ROW.className = 'row';
-    if (INTENTO.length != 0) {
+    if (INTENTO.length == 5) {
         for (let i in palabra) {
             const SPAN = document.createElement('span');
             SPAN.className = 'letter';
@@ -57,7 +57,12 @@ function intentar() {
             terminar("<h1 style='color: RED'>LO SIENTO, HAS PERDIDO</h1>");
         }
     }
-    else {
+    else if (INTENTO.length > 0 && INTENTO.length < 5) {
+
+        alert("INGRESE UNA PALABRA DE CINCO LETRAS");
+        
+    }
+    else if(INTENTO.length == 0){
         alert("INGRESE UNA PALABRA");
     }
 
