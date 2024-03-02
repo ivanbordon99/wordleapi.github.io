@@ -57,7 +57,7 @@ function intentar() {
             terminar("<h1 style='color: RED'>LO SIENTO, HAS PERDIDO</h1>");
         }
     }
-    else if (INTENTO.length > 0 && INTENTO.length < 5) {
+    else if (INTENTO.length > 0 && INTENTO.length < 5 || INTENTO.length > 5) {
 
         alert("INGRESE UNA PALABRA DE CINCO LETRAS");
         
