@@ -1,72 +1,151 @@
-body {
-   font-family: Arial, sans-serif;
-   background-image: url(background.jpg);
- }
-    
- h1 {
+h3 {
 
-   text-align: center;
-   border-width: 1px;
-   color: #3d7735;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   line-height: 1;
-   font-size: 50px;
-   
- }
-    
- #guess-input {
-   display: block;
-   margin: 0 auto 20px;
-   padding: 10px;
-   font-size: 18px;
-   width: 250px;
-   border: 1px solid #ccc;
-   ;
- }
-    
- #guess-button {
 
-   display: block;
-   margin: 0 auto;
-   padding: 10px 20px;
-   font-size: 18px;
-   background-color: #3d7735;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: #dddddd;
-   border: none;
-   border-radius: 3px;
- 
- }
-    
- button:active {
- 	
- }
-    
- .letter {
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-     border: 2px solid black;
-     font-weight: bold;
-     padding: 10px;
-     margin: 10px;
-     min-width: 20px;
-     text-align: center;
-     display: inline-block;
-     border-radius: 5px;
- }
-    
- .row{
-     margin-bottom: 10px;
-     border-radius: 10px;
-     text-align: center;
- }
- .grid{
-  margin-bottom: 10px;
-  border-radius: 10px;
+  padding: 0;
+  margin: 2;
+  -webkit-text-stroke: 1px black;
+  /* Para navegadores WebKit como Chrome y Safari */
+
+}
+
+footer {
+  
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 10px;
+  margin-top: auto;
+  /* Empuja el footer al final del contenedor */
+}
+
+body {
+
+
+
+  background: linear-gradient(to right, #3c40c6, #3c40c6, #3c40c6);
+  font-family: Arial, sans-serif;
   text-align: center;
 
- }
-    
- .input-area{
-     margin: 30px;
- }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Esto hace que el cuerpo ocupe como mínimo el alto completo de la ventana */
+  margin: 0;
+
+
+}
+
+
+#titulo {
+
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Arial Black", sans-serif;
+  font-size: 40px;
+  position: relative;
+  margin: 0.5px;
+  
+  box-shadow: inset black;
+
+
+}
+
+
+
+.inpletter {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra */
+  font-weight: bold;
+  border-radius: 2.5px;
+  font-family: "Arial Black", sans-serif;
+  border: 2px #cfb588 solid;
+  display: inline-flex;
+  /* Cambiado a inline-flex para usar flexbox */
+  align-items: center;
+  /* Centrar verticalmente */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  background-color: #eed09d;
+  width: 45px;
+  /* Define un tamaño fijo para evitar cambios de tamaño */
+  height: 45px;
+  /* Define un tamaño fijo para evitar cambios de tamaño */
+  margin: 2px 1px;
+  /* Añade un margen entre los divs */
+  font-size: 24px;
+  /* Tamaño de fuente */
+  color: black;
+  /* Color del texto */
+  vertical-align: middle;
+  /* Asegura que los divs se alineen en el centro */
+  box-shadow: black;
+
+
+
+
+}
+
+#guess-input {
+
+
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+
+}
+
+
+#guess-button {
+
+
+  display: block;
+  margin: 1px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0CBABA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+
+
+}
+
+button:active {
+
+
+  transform: scale(0.95);
+
+
+}
+
+.letter {
+
+
+
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block
+}
+
+
+
+.row {
+
+  margin-bottom: 10px;
+
+}
+
+.input-area {
+
+  margin: 30px;
+
+}

@@ -174,6 +174,7 @@ function pintar() {
             console.log(ficha.id + ": verde");
             ficha.style.backgroundColor = "#009432";
             ficha.style.borderColor = "#009432";
+            ficha.style.webkitTextStroke = "1px black";
             ficha.style.color = "white";
 
 
@@ -181,16 +182,18 @@ function pintar() {
         if (matriz[intento][j] === 2) {
 
             console.log(ficha.id + ": amarillo");
-            ficha.style.backgroundColor = "#f1c40f";
-            ficha.style.borderColor = "#f1c40f";
+            ficha.style.backgroundColor = "yellow";
+            ficha.style.borderColor = "yellow";
+            ficha.style.webkitTextStroke = "1px black";
             ficha.style.color = "white";
 
         }
         if (matriz[intento][j] === 3) {
 
             console.log(ficha.id + ": gris");
-            ficha.style.backgroundColor = "#636e72";
-            ficha.style.borderColor = "#636e72";
+            ficha.style.backgroundColor = "#808e9b";
+            ficha.style.borderColor = "#808e9b";
+            ficha.style.webkitTextStroke = "1px black";
             ficha.style.color = "white";
 
         }
